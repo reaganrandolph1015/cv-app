@@ -1,4 +1,4 @@
-# Project: React CV Application
+# React CV Application
 
 CV app created using Javascript and React that allows you to reate your own CV.
 
