@@ -2,11 +2,6 @@ import React from 'react';
 import '../styles/Style.css';
 
 function Input(props) {
-  const HandleSubmit = (e) => {
-    e.preventDefault();
-    console.log('User submitted.');
-  };
-
   return (
     <div>
       <div>
