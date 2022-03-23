@@ -1,5 +1,5 @@
-import React, { Component, useState } from 'react';
-import Editable from './components/Editable';
+import React, { Component } from 'react';
+import Input from './components/Input';
 
 class App extends Component {
   constructor(props) {
@@ -8,18 +8,9 @@ class App extends Component {
       task: '',
     };
   }
+
   render() {
-    return (
-      <Editable text={this.state.task} placeholder="Enter here" type="input">
-        <input
-          type="text"
-          name="task"
-          placeholder="Enter here"
-          value={this.state.task}
-          onChange={(e) => this.setState({ task: e.target.value })}
-        />
-      </Editable>
-    );
+    return <Input />;
   }
 }
 
