@@ -1,21 +1,18 @@
 import React from 'react';
-import '../styles/Style.css';
+import Input from './Input';
 
 function Header() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('User submitted.');
-  };
-
   return (
-    <div className="wrapper">
-      <h1>Hello</h1>
-      <form onSubmit={handleSubmit}>
-        <fieldset>
-          <input name="name" placeholder="Name" />
-        </fieldset>
-        <button type="submit">Submit</button>
-      </form>
+    <div>
+      <div>
+        <div>
+          <Input name="name" placeholder="Name" />
+        </div>
+        <Input name="phone" placeholder="XXX-XXX-XXX" symbol="☏" />
+        <Input name="email" placeholder="*****@gmail.com" />
+        <Input name="website" placeholder="linkedin.com/in/.." />
+        <Input name="location" placeholder="Phoenix, AZ" />
+      </div>
     </div>
   );
 }
