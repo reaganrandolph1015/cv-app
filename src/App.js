@@ -1,17 +1,8 @@
-import React, { Component } from 'react';
-import Input from './components/Input';
+import React from 'react';
+import Header from './components/Header';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      task: '',
-    };
-  }
-
-  render() {
-    return <Input />;
-  }
+function App() {
+  return <Header />;
 }
 
 export default App;
