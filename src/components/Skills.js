@@ -11,18 +11,30 @@ function Skills() {
           </b>
         </h1>
       </div>
-      <ul>
+      <ul className="remove-bullet">
         <li>
-          <b>{<Input name="skill" placeholder="Soft Skills: " />} </b>{' '}
-          {<Input name="skills" placeholder="Written Communication" />}
+          {
+            <Input
+              name="skill"
+              placeholder="Soft Skills: Written Communication"
+            />
+          }
         </li>
         <li>
-          <b>{<Input name="skill" placeholder="Soft Skills: " />} </b>{' '}
-          {<Input name="skills" placeholder="Written Communication" />}
+          {
+            <Input
+              name="skill"
+              placeholder="Soft Skills: Written Communication"
+            />
+          }
         </li>
         <li>
-          <b>{<Input name="skill" placeholder="Soft Skills: " />} </b>{' '}
-          {<Input name="skills" placeholder="Written Communication" />}
+          {
+            <Input
+              name="skill"
+              placeholder="Soft Skills: Written Communication"
+            />
+          }
         </li>
       </ul>
     </div>

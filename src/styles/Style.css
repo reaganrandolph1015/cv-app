@@ -2,6 +2,10 @@ fieldset {
   border: 0;
 }
 
+hr {
+  font-weight: bold;
+}
+
 input {
   border: 0;
 }
@@ -10,10 +14,24 @@ input {
   padding: 20px;
 }
 
+.education-container {
+  display: flex;
+}
+
 .education-date-info-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.education-university {
+  display: flex;
+}
+
+.education-university-content {
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .expected-grad {
@@ -31,13 +49,7 @@ input {
   justify-content: flex-end;
 }
 
-.wrapper {
-  padding: 20px 20px;
-  font-family: Calibri, sans-serif;
-}
-
-.wrapper fieldset {
-  margin: 20px 0;
+.input-field-position {
 }
 
 .header-container {
@@ -71,6 +83,12 @@ input {
   font-weight: bold;
 }
 
+.remove-bullet {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .sec-title {
   font-size: smaller;
 }
@@ -81,4 +99,13 @@ input {
   display: flex;
   justify-content: flex-end;
   margin-bottom: -25px;
+}
+
+.wrapper {
+  padding: 20px 20px;
+  font-family: Calibri, sans-serif;
+}
+
+.wrapper fieldset {
+  margin: 20px 0;
 }

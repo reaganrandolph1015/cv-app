@@ -12,13 +12,17 @@ function Education() {
           </h1>
         </b>
       </div>
-      <div>
-        <div>
-          <div>
-            <Input name="university" placeholder="University of Tampa" /> |
-            <Input name="school-location" placeholder="Tampa, Florida" />
+      <div className="education-container">
+        <div className="education-university-container">
+          <div className="education-university">
+            <div className="education-university-content">
+              <Input name="university" placeholder="University of Tampa" />
+            </div>
+            <div>
+              <Input name="school-location" placeholder="Tampa, Florida" />
+            </div>
           </div>
-          <div>
+          <div className="education-degree">
             <Input name="degree" placeholder="Bachelor of Arts in Phsycology" />
           </div>
         </div>
