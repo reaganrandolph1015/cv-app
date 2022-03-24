@@ -4,9 +4,11 @@ import Input from './Input';
 function Course() {
   return (
     <div>
-      <div>
+      <div className="sec-title">
         <h1>
-          <b>Relevant Coursework</b>
+          <b>
+            Relevant Coursework<hr></hr>
+          </b>
         </h1>
       </div>
       <ul>

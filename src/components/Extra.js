@@ -7,12 +7,17 @@ function Extra() {
       <div>
         <h1>
           <b>
-            <Input name="extra-title" placeholder="Extra" />
+            <Input
+              className="sec-title-extra-input"
+              name="extra-title"
+              placeholder="Extra"
+            />
+            <hr></hr>
           </b>
         </h1>
       </div>
       <div>
-        <Input name="extra-cont" />
+        <Input name="extra-cont" placeholder="Enter here" />
       </div>
     </div>
   );

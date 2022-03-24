@@ -1,7 +1,84 @@
+fieldset {
+  border: 0;
+}
+
+input {
+  border: 0;
+}
+
+.attend-date {
+  padding: 20px;
+}
+
+.education-date-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.expected-grad {
+  font-size: 13.5px;
+}
+
+.expected-grad-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .wrapper {
-  padding: 5px 20px;
+  padding: 20px 20px;
+  font-family: Calibri, sans-serif;
 }
 
 .wrapper fieldset {
   margin: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-content {
+  display: flex;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.header-input-logo {
+  display: flex;
+}
+
+.head-name {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.name-input {
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sec-title {
+  font-size: smaller;
+}
+
+.sec-title-extra-input {
+  font-size: smaller;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -25px;
 }

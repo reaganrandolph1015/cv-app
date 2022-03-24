@@ -8,7 +8,12 @@ function Input(props) {
         <h2>{props.symbol}</h2>
       </div>
       <fieldset>
-        <input name={props.name} type="text" placeholder={props.placeholder} />
+        <input
+          className={props.className}
+          name={props.name}
+          type="text"
+          placeholder={props.placeholder}
+        />
       </fieldset>
     </div>
   );

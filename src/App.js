@@ -11,13 +11,16 @@ function App() {
     e.preventDefault();
     console.log('User submitted.');
   };
+
   return (
     <div className="wrapper">
       <form onSubmit={HandleSubmit}>
         {<Header />} {<Education />} {<Course />} {<Skills />} {<Experience />}
         {<Extra />}
-        <button>Edit</button>
-        <button type="submit">Submit</button>
+        <div className="form-buttons">
+          <button>Edit</button>
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </div>
   );

@@ -1,12 +1,17 @@
 import React from 'react';
 import Input from './Input';
+import '../styles/Style.css';
 
 function Education() {
   return (
     <div>
-      <b>
-        <h1>Education</h1>
-      </b>
+      <div className="sec-title">
+        <b>
+          <h1>
+            Education<hr></hr>
+          </h1>
+        </b>
+      </div>
       <div>
         <div>
           <div>
@@ -17,11 +22,17 @@ function Education() {
             <Input name="degree" placeholder="Bachelor of Arts in Phsycology" />
           </div>
         </div>
-        <div>
-          <Input name="attendance-date" placeholder="Aug, 2021 - Present" />
-          <div>
-            <p>Expected Graduation,</p>
-            <Input name="expected-grad" placeholder="Nov, 2026" />
+        <div className="education-date-info-container">
+          <div className="attend-date">
+            <Input name="attendance-date" placeholder="Aug, 2021 - Present" />
+          </div>
+          <div className="expected-grad-container">
+            <div className="eg-eg">
+              <p className="expected-grad">Expected Graduation,</p>
+            </div>
+            <div className="eg-input">
+              <Input name="expected-grad" placeholder="Nov, 2026" />
+            </div>
           </div>
         </div>
       </div>
