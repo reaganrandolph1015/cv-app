@@ -11,7 +11,7 @@ function Course() {
           </b>
         </h1>
       </div>
-      <ul>
+      <ul className="course-ul">
         <li>
           <Input name="course" placeholder="MATH-1314, College Algebra" />
         </li>

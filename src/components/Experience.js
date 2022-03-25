@@ -13,21 +13,29 @@ function Experience() {
       </div>
       <div>
         <div>
-          <ul>
+          <ul className="job-ul">
             <li>
-              {<Input name="job-company" placeholder="Amazon" />} |
-              {<Input name="job-location" placeholder="Manga, FL" />}
-              {<Input name="job-date" placeholder="Feb 2020 - Present" />}
-              <ul>
+              <div className="job-header-container">
+                <div className="job-company-location-container">
+                  {<Input name="job-company" placeholder="Amazon" />}
+                  {<Input name="job-location" placeholder="Manga, FL" />}
+                </div>
+                {<Input name="job-date" placeholder="Feb 2020 - Present" />}
+              </div>
+              <ul className="job-info">
                 <li>{<Input name="job-info" />}</li>
                 <li>{<Input name="job-info" />}</li>
               </ul>
             </li>
             <li>
-              {<Input name="job-company" placeholder="Amazon" />} |
-              {<Input name="job-location" placeholder="Mango, FL" />}
-              {<Input name="job-date" placeholder="Feb 2020 - Present" />}
-              <ul>
+              <div className="job-header-container">
+                <div className="job-company-location-container">
+                  {<Input name="job-company" placeholder="Amazon" />}
+                  {<Input name="job-location" placeholder="Mango, FL" />}
+                </div>
+                {<Input name="job-date" placeholder="Feb 2020 - Present" />}
+              </div>
+              <ul className="job-info">
                 <li>{<Input name="job-info" />}</li>
                 <li>{<Input name="job-info" />}</li>
               </ul>

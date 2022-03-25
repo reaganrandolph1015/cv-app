@@ -11,7 +11,7 @@ function Skills() {
           </b>
         </h1>
       </div>
-      <ul className="remove-bullet">
+      <ul className="remove-bullet skills-ul">
         <li>
           {
             <Input

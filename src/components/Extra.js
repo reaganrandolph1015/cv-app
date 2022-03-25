@@ -3,8 +3,8 @@ import Input from './Input';
 
 function Extra() {
   return (
-    <div>
-      <div>
+    <div className="extra-container">
+      <div className="extra-title">
         <h1>
           <b>
             <Input
@@ -16,7 +16,7 @@ function Extra() {
           </b>
         </h1>
       </div>
-      <div>
+      <div className="extra-cont">
         <Input name="extra-cont" placeholder="Enter here" />
       </div>
     </div>

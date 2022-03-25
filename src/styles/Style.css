@@ -2,10 +2,6 @@ fieldset {
   border: 0;
 }
 
-hr {
-  font-weight: bold;
-}
-
 input {
   border: 0;
 }
@@ -14,8 +10,14 @@ input {
   padding: 20px;
 }
 
+.course-ul {
+  margin-top: -10px;
+}
+
 .education-container {
   display: flex;
+  justify-content: space-between;
+  margin-top: -30px;
 }
 
 .education-date-info-container {
@@ -42,6 +44,14 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+.extra-container {
+  margin-bottom: 100px;
+}
+
+.extra-content {
+  margin-top: -10px;
 }
 
 .form-buttons {
@@ -77,6 +87,26 @@ input {
   align-items: flex-start;
 }
 
+.job-company-location-container {
+  display: flex;
+}
+
+.job-header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -25px;
+}
+
+.job-info {
+  list-style-type: disc;
+}
+
+.job-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .name-input {
   font-size: 35px;
   text-align: center;
@@ -99,6 +129,10 @@ input {
   display: flex;
   justify-content: flex-end;
   margin-bottom: -25px;
+}
+
+.skills-ul {
+  margin-top: -10px;
 }
 
 .wrapper {
