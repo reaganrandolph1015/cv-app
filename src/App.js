@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Education from './components/Education';
 import Course from './components/Course';
@@ -7,20 +7,28 @@ import Experience from './components/Experience';
 import Extra from './components/Extra';
 
 function App() {
-  const HandleSubmit = (e) => {
+  const [showBtns, setShowBtns] = useState(true);
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('User submitted.');
+    setShowBtns(false);
+  };
+
+  const btn = () => {
+    return (
+      <div className="form-buttons">
+        <button type="submit">✅</button>
+      </div>
+    );
   };
 
   return (
     <div className="wrapper">
-      <form onSubmit={HandleSubmit}>
-        {<Header />} {<Education />} {<Course />} {<Skills />} {<Experience />}
+      <form onSubmit={handleSubmit} onDoubleClick={() => setShowBtns(true)}>
+        {<Header />}
+        {<Education />} {<Course />} {<Skills />} {<Experience />}
         {<Extra />}
-        <div className="form-buttons">
-          <button>Edit</button>
-          <button type="submit">Submit</button>
-        </div>
+        {showBtns ? btn() : null}
       </form>
     </div>
   );

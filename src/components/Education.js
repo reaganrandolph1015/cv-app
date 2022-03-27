@@ -34,7 +34,7 @@ function Education() {
             <div className="eg-eg">
               <p className="expected-grad">Expected Graduation,</p>
             </div>
-            <div className="eg-input">
+            <div>
               <Input name="expected-grad" placeholder="Nov, 2026" />
             </div>
           </div>

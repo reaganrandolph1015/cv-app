@@ -17,7 +17,9 @@ function Experience() {
             <li>
               <div className="job-header-container">
                 <div className="job-company-location-container">
-                  {<Input name="job-company" placeholder="Amazon" />}
+                  <div className="job-company-input">
+                    {<Input name="job-company" placeholder="Amazon" />}
+                  </div>
                   {<Input name="job-location" placeholder="Manga, FL" />}
                 </div>
                 {<Input name="job-date" placeholder="Feb 2020 - Present" />}
@@ -30,7 +32,9 @@ function Experience() {
             <li>
               <div className="job-header-container">
                 <div className="job-company-location-container">
-                  {<Input name="job-company" placeholder="Amazon" />}
+                  <div className="job-company-input">
+                    {<Input name="job-company" placeholder="Amazon" />}{' '}
+                  </div>
                   {<Input name="job-location" placeholder="Mango, FL" />}
                 </div>
                 {<Input name="job-date" placeholder="Feb 2020 - Present" />}

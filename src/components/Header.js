@@ -13,7 +13,7 @@ function Header() {
           <div className="header-input-logo">
             <div className="header-logo">☏</div>
             <div>
-              <Input name="phone" placeholder="XXX-XXX-XXX" />
+              <Input name="phone" placeholder="XXX-XXX-XXXX" />
             </div>
           </div>
           <div className="header-input-logo">

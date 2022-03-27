@@ -1,3 +1,9 @@
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 fieldset {
   border: 0;
 }
@@ -36,14 +42,20 @@ input {
   flex-shrink: 0;
 }
 
+.eg-eg {
+  display: flex;
+  align-items: center;
+  margin-right: -8px;
+}
+
 .expected-grad {
-  font-size: 13.5px;
+  font-size: 13px;
 }
 
 .expected-grad-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  max-width: 262px;
 }
 
 .extra-container {
@@ -59,7 +71,18 @@ input {
   justify-content: flex-end;
 }
 
-.input-field-position {
+.input-field-container {
+  position: relative;
+}
+
+.input-field-container input {
+  width: 70%;
+  padding-right: 60px;
+}
+
+.input-field-container button {
+  position: absolute;
+  right: 2px;
 }
 
 .header-container {
@@ -87,8 +110,12 @@ input {
   align-items: flex-start;
 }
 
+.job-company-input {
+}
+
 .job-company-location-container {
   display: flex;
+  flex-direction: column;
 }
 
 .job-header-container {
@@ -127,7 +154,7 @@ input {
   font-size: smaller;
   font-weight: bold;
   display: flex;
-  justify-content: flex-end;
+  margin-left: -25px;
   margin-bottom: -25px;
 }
 
