@@ -107,10 +107,6 @@ input {
 .head-name {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-}
-
-.job-company-input {
 }
 
 .job-company-location-container {

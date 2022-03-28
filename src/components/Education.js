@@ -28,7 +28,11 @@ function Education() {
         </div>
         <div className="education-date-info-container">
           <div className="attend-date">
-            <Input name="attendance-date" placeholder="Aug, 2021 - Present" />
+            <Input
+              name="attendance-date"
+              placeholder="Aug, 2021 - Present"
+              style={{ textAlign: 'right' }}
+            />
           </div>
           <div className="expected-grad-container">
             <div className="eg-eg">

@@ -6,12 +6,17 @@ function Input(props) {
   const [showClear, setShowClear] = useState(false);
 
   const renderClear = () => {
-    return <button onClick={clearInput}>❌</button>;
+    return (
+      <button className="clear-btn" onMouseDown={clearInput}>
+        ❌
+      </button>
+    );
   };
 
   const clearInput = () => {
     setInputValue('');
     setShowClear(false);
+    console.log('Cleared');
   };
 
   const handleInput = (e) => {
@@ -19,20 +24,25 @@ function Input(props) {
   };
 
   return (
-    <div className="input-field-container">
+    <div>
       <div>
         <h2>{props.symbol}</h2>
       </div>
       <fieldset>
-        <input
-          name={props.name}
-          type="text"
-          placeholder={props.placeholder}
-          value={inputValue}
-          onChange={handleInput}
-          onClick={() => setShowClear(true)}
-        />
-        {showClear ? renderClear() : null}
+        <div className="input-field-container">
+          <input
+            onBlur={() => setShowClear(false)}
+            name={props.name}
+            className={props.className}
+            type="text"
+            style={props.style}
+            placeholder={props.placeholder}
+            value={inputValue}
+            onChange={handleInput}
+            onClick={() => setShowClear(true)}
+          />
+          {showClear ? renderClear() : null}
+        </div>
       </fieldset>
     </div>
   );

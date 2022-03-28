@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="wrapper">
-      <form onSubmit={handleSubmit} onDoubleClick={() => setShowBtns(true)}>
+      <form onSubmit={handleSubmit} onClick={() => setShowBtns(true)}>
         {<Header />}
         {<Education />} {<Course />} {<Skills />} {<Experience />}
         {<Extra />}

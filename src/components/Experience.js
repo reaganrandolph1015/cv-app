@@ -22,7 +22,13 @@ function Experience() {
                   </div>
                   {<Input name="job-location" placeholder="Manga, FL" />}
                 </div>
-                {<Input name="job-date" placeholder="Feb 2020 - Present" />}
+                {
+                  <Input
+                    name="job-date"
+                    placeholder="Feb 2020 - Present"
+                    style={{ textAlign: 'right' }}
+                  />
+                }
               </div>
               <ul className="job-info">
                 <li>{<Input name="job-info" />}</li>
@@ -37,7 +43,13 @@ function Experience() {
                   </div>
                   {<Input name="job-location" placeholder="Mango, FL" />}
                 </div>
-                {<Input name="job-date" placeholder="Feb 2020 - Present" />}
+                {
+                  <Input
+                    name="job-date"
+                    placeholder="Feb 2020 - Present"
+                    style={{ textAlign: 'right' }}
+                  />
+                }
               </div>
               <ul className="job-info">
                 <li>{<Input name="job-info" />}</li>
